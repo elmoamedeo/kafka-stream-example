@@ -26,6 +26,8 @@ public class PageViewToLocationStream {
         /*
         Have to read the docs on how to map it. Here, the idea is to take the ipAddr
         from the message and send it to ipstack, so it returns me the location.
+
+        The gateway that will be used to get the Location is already created: LocationGateway
          */
 
         KTable<String, PageView> ipAddresses = pageViewKStream.toTable();
