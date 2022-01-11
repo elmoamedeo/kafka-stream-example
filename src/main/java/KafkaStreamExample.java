@@ -1,6 +1,11 @@
+import infra.config.KafkaConfig;
+
+import java.util.Properties;
+
 public class KafkaStreamExample {
 
     public static void main(String[] args) {
-        System.out.println("Placeholder");
+        final KafkaConfig kafkaConfig = new KafkaConfig();
+        final Properties properties = kafkaConfig.executeConfigs();
     }
 }
