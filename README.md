@@ -19,7 +19,7 @@ Running the application can be done using the jar previously built, using:
 
 ### Kafka
 
-For the Kafka part, you could either run the services available on docker compose and create the topics `pageview` and `location` in the available on the Control Center (localhost:9091) or do it by command:
+For the Kafka part, you could either run the services available on docker compose and create the topics `pageview` and `location` in the available Control Center (localhost:9091) or do it by command:
 
 ```
 bin/kafka-console-producer.sh --bootstrap-server localhost:9092 \
